@@ -6,7 +6,7 @@
     padding: 0;
 }
 *:focus {
-    outline: 1px dashed black;
+    outline: 1px dashed $color-primary-pink;
     outline-offset: 4px;
 }
 html {
@@ -17,7 +17,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: $color-white;
+    background-color: $bg-white;
 }
 img {
     max-width: 100%;

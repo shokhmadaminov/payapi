@@ -2,14 +2,63 @@ html {
     font-size: 62.5%;
 }
 body {
-    font-family: serif;
-    font-size: 1.6rem;
-    color: inherit;
+    font-family: $public-font;
+    font-size: 1.5;
+    line-height: 1.86;
+    font-weight: 400;
+    color: $color-mirage-blue;
 }
 a {
     text-decoration: none;
     color: inherit;
 }
 h1 {
+    font-family: $serif-font;
+    font-weight: 400;
+    font-size: 7.2rem;
+    line-height: 1;
+    letter-spacing: -0.55px;
+    color: $color-juan-blue;
     margin: 0;
+}
+.small-h1 {
+    font-family: $serif-font;
+    font-weight: 400;
+    font-size: 5.6rem;
+    line-height: 1;
+    letter-spacing: -0.43px;
+    color: $color-juan-blue;
+    margin: 0;
+}
+h2 {
+    font-family: $serif-font;
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 1.16;
+    letter-spacing: -0.37px;
+    color: $color-juan-blue;
+}
+h3 {
+    font-family: $serif-font;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 1.25;
+    letter-spacing: -0.25px;
+    color: $color-juan-blue;
+}
+.small-h3 {
+    font-family: $public-font;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.38;
+    letter-spacing: -0.14px;
+    color: $color-juan-blue;
+}
+h4 {
+    font-family: $serif-font;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.33;
+    letter-spacing: -0.18px;
+    color: $color-juan-blue;
 }

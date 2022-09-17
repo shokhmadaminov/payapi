@@ -7,7 +7,7 @@
 }
 
 *:focus {
-  outline: 1px dashed black;
+  outline: 1px dashed #ba4270;
   outline-offset: 4px;
 }
 
@@ -51,9 +51,11 @@ html {
 }
 
 body {
-  font-family: serif;
-  font-size: 1.6rem;
-  color: inherit;
+  font-family: "Public Sans", "Arial", sans-serif;
+  font-size: 1.5;
+  line-height: 1.86;
+  font-weight: 400;
+  color: #1b262f;
 }
 
 a {
@@ -62,5 +64,119 @@ a {
 }
 
 h1 {
+  font-family: "DM Serif Display", "Georgia", serif;
+  font-weight: 400;
+  font-size: 7.2rem;
+  line-height: 1;
+  letter-spacing: -0.55px;
+  color: #36536b;
   margin: 0;
+}
+
+.small-h1 {
+  font-family: "DM Serif Display", "Georgia", serif;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 1;
+  letter-spacing: -0.43px;
+  color: #36536b;
+  margin: 0;
+}
+
+h2 {
+  font-family: "DM Serif Display", "Georgia", serif;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 1.16;
+  letter-spacing: -0.37px;
+  color: #36536b;
+}
+
+h3 {
+  font-family: "DM Serif Display", "Georgia", serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  letter-spacing: -0.25px;
+  color: #36536b;
+}
+
+.small-h3 {
+  font-family: "Public Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.38;
+  letter-spacing: -0.14px;
+  color: #36536b;
+}
+
+h4 {
+  font-family: "DM Serif Display", "Georgia", serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.33;
+  letter-spacing: -0.18px;
+  color: #36536b;
+}
+
+.primary-btn {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.17;
+  color: #fbfcfe;
+  background-color: #ba4270;
+  border-radius: 24px;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  padding: 1.5rem 2.55rem;
+  display: inline-block;
+}
+.primary-btn:hover {
+  background-color: #da6d97;
+}
+.primary-btn:active {
+  background-color: rgba(186, 66, 112, 0.6);
+}
+
+.secondary-btn {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.17;
+  letter-spacing: -0.12px;
+  color: #fbfcfe;
+  border: 1px solid #fbfcfe;
+  background-color: transparent;
+  border-radius: 24px;
+  padding: 1.4rem 3.1rem;
+  display: inline-block;
+}
+.secondary-btn:hover {
+  background-color: #fff;
+  color: #1b262f;
+}
+.secondary-btn:active {
+  background-color: transparent;
+  color: #fbfcfe;
+  opacity: 0.6;
+}
+
+.blue-btn {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.17;
+  letter-spacing: -0.12px;
+  color: #36536b;
+  border: 1px solid #36536b;
+  background-color: transparent;
+  border-radius: 24px;
+  padding: 1.4rem 2.6rem;
+  display: inline-block;
+}
+.blue-btn:hover {
+  background-color: #36536b;
+  color: #fff;
+}
+.blue-btn:active {
+  background-color: transparent;
+  color: #36536b;
+  opacity: 0.6;
 }/*# sourceMappingURL=main.css.map */
