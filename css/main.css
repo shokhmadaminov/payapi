@@ -20,12 +20,14 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #edf3f8;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
+  object-position: center;
 }
 
 ul, ol {
@@ -46,13 +48,20 @@ main {
   flex-grow: 1;
 }
 
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
   font-family: "Public Sans", "Arial", sans-serif;
-  font-size: 1.5;
+  font-size: 1.5rem;
   line-height: 1.86;
   font-weight: 400;
   color: #1b262f;
@@ -117,6 +126,41 @@ h4 {
   line-height: 1.33;
   letter-spacing: -0.18px;
   color: #36536b;
+}
+
+.sitenav {
+  margin-right: auto;
+}
+.sitenav ul {
+  display: flex;
+  align-items: center;
+}
+.sitenav li:not(:last-child) {
+  margin-right: 4rem;
+}
+.sitenav a {
+  line-height: 1.17;
+  color: #36536b;
+  opacity: 0.7;
+  font-weight: 700;
+}
+.sitenav a:hover {
+  opacity: 1;
+}
+
+.header {
+  padding: 4rem 0;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header .site-logo {
+  display: flex;
+  margin-right: 6.4rem;
+}
+.header .site-logo img {
+  display: block;
 }
 
 .primary-btn {

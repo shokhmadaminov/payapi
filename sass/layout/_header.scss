@@ -1,0 +1,14 @@
+.header {
+    padding: 4rem 0;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .site-logo {
+        display: flex;
+        margin-right: 6.4rem;
+        img {
+            display: block;
+        }
+    }
+}
