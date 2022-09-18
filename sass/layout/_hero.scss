@@ -3,20 +3,50 @@
     background-size: 780px 780px;
     background-repeat: no-repeat;
     background-position: right -140px top -172px;
+    @include responsive(table) {
+        background-size: 949px 949px;
+        background-position: center top -660px;
+    }
+    @include responsive(table) {
+        background-size: 780px 780px;
+        background-position: center top -540px;
+    }
 }
 .hero {
     padding: 3.4rem 0 7.5rem;
+    @include responsive(table) {
+        padding: 0.8rem 0 10rem;
+    }
+    @include responsive(phone) {
+        padding: 0rem 0 8rem;
+    }
     .container {
         display: flex;
         align-items: center;
+        @include responsive(laptop) {
+            justify-content: space-between;
+        }
+        @include responsive(table) {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
     }
     &__text-wrapper {
         width: 100%;
         max-width: 546px;
         margin-right: 20rem;
+        @include responsive(laptop) {
+            margin-right: 0;
+        }
     }
     h1 {
         margin-bottom: 2.1rem;
+        @include responsive(mini-desktop) {
+            font-size: 4.8rem;
+        }
+        @include responsive(phone) {
+            font-size: 3.2rem;
+        }
     }
     form {
         background-color: $bg-white;
@@ -24,15 +54,28 @@
         border-radius: 24px;
         align-items: stretch;
         margin-bottom: 1.6rem;
+        @include responsive(phone) {
+            flex-direction: column;
+            background-color: transparent;
+        }
+        @include responsive(mini-phone) {
+            width: 100%;
+        }
     }
     input {
         width: 272px;
-        border-radius: 24px 0 0 24px;
+        border-radius: 24px;
         padding: 1.5rem 0.5rem 1.5rem 2.7rem;
         background-color: $bg-white;
         color: $color-juan-blue;
         font-weight: 700;
         outline: none;
+        @include responsive(phone) {
+            margin-bottom: 1.6rem;
+        }
+        @include responsive(mini-phone) {
+            width: 100%;
+        }
         &::placeholder {
             font-weight: 700;
             color: rgba(54, 83, 107, 0.5);
@@ -41,6 +84,10 @@
     p {
         color: $color-juan-blue;
         opacity: 0.7;
+        padding-left: 2.7rem;
+        @include responsive(table) {
+            padding-left: 0;
+        }
         a {
             font-weight: 700;
         }
@@ -48,5 +95,16 @@
     img {
         border-radius: 34px;
         box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+        @include responsive(table) {
+            width: 159px;
+            height: 300px;
+            border-radius: 24px;
+            margin-bottom: 4.8rem;
+        }
+        @include responsive(phone) {
+            width: 127px;
+            height: 240px;
+            border-radius: 20px;
+        }
     }
 }

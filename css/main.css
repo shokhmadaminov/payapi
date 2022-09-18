@@ -151,6 +151,11 @@ h4 {
 .header {
   padding: 4rem 0;
 }
+@media only screen and (max-width: 576px) {
+  .header {
+    padding: 4rem 0 3.2rem;
+  }
+}
 .header .container {
   display: flex;
   align-items: center;
@@ -159,8 +164,36 @@ h4 {
   display: flex;
   margin-right: 6.4rem;
 }
+@media only screen and (max-width: 768px) {
+  .header .site-logo {
+    margin-right: auto;
+  }
+}
 .header .site-logo img {
   display: block;
+}
+@media only screen and (max-width: 768px) {
+  .header__btn {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+.burger-btn {
+  background-color: transparent;
+  display: none;
+}
+.burger-btn img {
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  .burger-btn {
+    display: block;
+  }
 }
 
 .wrapper {
@@ -169,21 +202,69 @@ h4 {
   background-repeat: no-repeat;
   background-position: right -140px top -172px;
 }
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    background-size: 949px 949px;
+    background-position: center top -660px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    background-size: 780px 780px;
+    background-position: center top -540px;
+  }
+}
 
 .hero {
   padding: 3.4rem 0 7.5rem;
 }
+@media only screen and (max-width: 768px) {
+  .hero {
+    padding: 0.8rem 0 10rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero {
+    padding: 0rem 0 8rem;
+  }
+}
 .hero .container {
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 1048px) {
+  .hero .container {
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero .container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 .hero__text-wrapper {
   width: 100%;
   max-width: 546px;
   margin-right: 20rem;
 }
+@media only screen and (max-width: 1048px) {
+  .hero__text-wrapper {
+    margin-right: 0;
+  }
+}
 .hero h1 {
   margin-bottom: 2.1rem;
+}
+@media only screen and (max-width: 992px) {
+  .hero h1 {
+    font-size: 4.8rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero h1 {
+    font-size: 3.2rem;
+  }
 }
 .hero form {
   background-color: #fff;
@@ -192,14 +273,35 @@ h4 {
   align-items: stretch;
   margin-bottom: 1.6rem;
 }
+@media only screen and (max-width: 576px) {
+  .hero form {
+    flex-direction: column;
+    background-color: transparent;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .hero form {
+    width: 100%;
+  }
+}
 .hero input {
   width: 272px;
-  border-radius: 24px 0 0 24px;
+  border-radius: 24px;
   padding: 1.5rem 0.5rem 1.5rem 2.7rem;
   background-color: #fff;
   color: #36536b;
   font-weight: 700;
   outline: none;
+}
+@media only screen and (max-width: 576px) {
+  .hero input {
+    margin-bottom: 1.6rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .hero input {
+    width: 100%;
+  }
 }
 .hero input::placeholder {
   font-weight: 700;
@@ -208,6 +310,12 @@ h4 {
 .hero p {
   color: #36536b;
   opacity: 0.7;
+  padding-left: 2.7rem;
+}
+@media only screen and (max-width: 768px) {
+  .hero p {
+    padding-left: 0;
+  }
 }
 .hero p a {
   font-weight: 700;
@@ -215,6 +323,21 @@ h4 {
 .hero img {
   border-radius: 34px;
   box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+}
+@media only screen and (max-width: 768px) {
+  .hero img {
+    width: 159px;
+    height: 300px;
+    border-radius: 24px;
+    margin-bottom: 4.8rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero img {
+    width: 127px;
+    height: 240px;
+    border-radius: 20px;
+  }
 }
 
 .primary-btn {

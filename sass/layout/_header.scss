@@ -1,5 +1,8 @@
 .header {
     padding: 4rem 0;
+    @include responsive(phone) {
+        padding: 4rem 0 3.2rem;
+    }
     .container {
         display: flex;
         align-items: center;
@@ -7,8 +10,31 @@
     .site-logo {
         display: flex;
         margin-right: 6.4rem;
+        @include responsive(table) {
+            margin-right: auto;
+        }
         img {
             display: block;
         }
+    }
+    &__btn {
+        @include responsive(table) {
+            display: none !important;
+        }
+    }
+    &__nav {
+        @include responsive(table) {
+            display: none;
+        }
+    }
+}
+.burger-btn {
+    background-color: transparent;
+    display: none;
+    img {
+        display: block;
+    }
+    @include responsive(table) {
+        display: block;
     }
 }
