@@ -1,0 +1,97 @@
+.partners {
+    background-color: $color-mirage-blue;
+    padding: 10rem 0;
+    background-image: url("../images/png/bg-round.png");
+    background-repeat: no-repeat;
+    background-size: 780px 780px;
+    background-position: left -235px top -360px;
+    @include responsive(mini-desktop) {
+        padding: 8.8rem 0;
+    }
+    @include responsive(table) {
+        background-position: center top -540px;
+    }
+    @include responsive(table) {
+        padding: 8rem 0;
+    }
+    @include responsive(mini-phone) {
+        background-position: center top -580px;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $color-primary-white;
+        @include responsive(mini-desktop) {
+            flex-direction: column-reverse;
+        }
+    }
+    &__text-wrapper {
+        width: 100%;
+        max-width: 445px;
+        text-align: center;
+    }
+    h2 {
+        margin-bottom: 2.4rem;
+        color: $color-primary-white;
+        @include responsive(mini-phone) {
+            font-size: 3.2rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+    p {
+        opacity: 0.7;
+        margin-bottom: 3.2rem;
+        @include responsive(mini-phone) {
+            margin-bottom: 6rem;
+        }
+    }
+    ul {
+        width: 100%;
+        max-width: 536px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &:first-child {
+            margin-bottom: 4rem;
+        }
+        @include responsive(mini-desktop) {
+            margin-bottom: 6.7rem;
+        }
+        @include responsive(phone) {
+            margin-bottom: 5.8rem;
+        }
+    }
+    li {
+        @include responsive(phone) {
+            margin-right: 2rem;
+        }
+        @include responsive(mini-phone) {
+            margin-right: 0;
+        }
+    }
+    li:first-child {
+        margin-right: 3rem;
+        margin-bottom: 4rem;
+        @include responsive(phone) {
+            margin-bottom: 4rem;
+        }
+    }
+    li:nth-child(3) {
+        @include responsive(phone) {
+            margin-bottom: 4rem;
+            margin-right: 0;
+        }
+    }
+    li:nth-child(2) {
+        margin-right: 3rem;
+        @include responsive(phone) {
+            margin-right: 0;
+        }
+    }
+    li:last-child {
+        @include responsive(phone) {
+            margin-right: 0;
+        }
+    }
+}

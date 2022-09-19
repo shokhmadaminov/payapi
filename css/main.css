@@ -196,6 +196,128 @@ h4 {
   }
 }
 
+.partners {
+  background-color: #1b262f;
+  padding: 10rem 0;
+  background-image: url("../images/png/bg-round.png");
+  background-repeat: no-repeat;
+  background-size: 780px 780px;
+  background-position: left -235px top -360px;
+}
+@media only screen and (max-width: 992px) {
+  .partners {
+    padding: 8.8rem 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .partners {
+    background-position: center top -540px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .partners {
+    padding: 8rem 0;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .partners {
+    background-position: center top -580px;
+  }
+}
+.partners .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fbfcfe;
+}
+@media only screen and (max-width: 992px) {
+  .partners .container {
+    flex-direction: column-reverse;
+  }
+}
+.partners__text-wrapper {
+  width: 100%;
+  max-width: 445px;
+  text-align: center;
+}
+.partners h2 {
+  margin-bottom: 2.4rem;
+  color: #fbfcfe;
+}
+@media only screen and (max-width: 370px) {
+  .partners h2 {
+    font-size: 3.2rem;
+    margin-bottom: 1.6rem;
+  }
+}
+.partners p {
+  opacity: 0.7;
+  margin-bottom: 3.2rem;
+}
+@media only screen and (max-width: 370px) {
+  .partners p {
+    margin-bottom: 6rem;
+  }
+}
+.partners ul {
+  width: 100%;
+  max-width: 536px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.partners ul:first-child {
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 992px) {
+  .partners ul {
+    margin-bottom: 6.7rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .partners ul {
+    margin-bottom: 5.8rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .partners li {
+    margin-right: 2rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .partners li {
+    margin-right: 0;
+  }
+}
+.partners li:first-child {
+  margin-right: 3rem;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 576px) {
+  .partners li:first-child {
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .partners li:nth-child(3) {
+    margin-bottom: 4rem;
+    margin-right: 0;
+  }
+}
+.partners li:nth-child(2) {
+  margin-right: 3rem;
+}
+@media only screen and (max-width: 576px) {
+  .partners li:nth-child(2) {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .partners li:last-child {
+    margin-right: 0;
+  }
+}
+
 .wrapper {
   background-image: url("../images/png/bg-round.png");
   background-size: 780px 780px;
