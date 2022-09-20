@@ -1,0 +1,108 @@
+.middle {
+    padding-bottom: 14.6rem;
+    background-image: url("../images/png/bg-round.png");
+    background-repeat: no-repeat;
+    background-size: 780px 780px;
+    background-position: bottom right -50%;
+    @include responsive(mini-desktop) {
+        padding-bottom: 10rem;
+        background-image: none;
+    }
+    @include responsive(phone) {
+        padding-bottom: 8rem;
+    }
+    ul {
+        width: 100%;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include responsive(mini-desktop) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    li:first-child {
+        width: 100%;
+        max-width: 1015px;
+        margin-bottom: 15rem;
+        @include responsive(mini-desktop) {
+            margin-bottom: 10rem;
+        }
+        @include responsive(phone) {
+            margin-bottom: 8rem;
+        }
+        img {
+            width: 445px;
+            height: 284px;
+            @include responsive(mini-desktop) {
+                width: 392px;
+                height: 250px;
+                margin-bottom: 4.8rem;
+            }
+            @include responsive(phone) {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    img {
+        box-shadow: 25px 25px 80px 0px rgba(54, 83, 107, 0.3);
+        background-color: transparent;
+    }
+    li:last-child {
+        flex-direction: row-reverse;
+        @include responsive(mini-desktop) {
+            flex-direction: column;
+        }
+        img {
+            width: 253px;
+            height: 500px;
+            border-radius: 35px;
+            object-fit: cover;
+            @include responsive(desktop) {
+                width: calc(50% - 12.5px);
+                height: auto;
+            }
+            @include responsive(mini-desktop) {
+                border-radius: 24px;
+            }
+            &:first-child {
+                margin-right: 4rem;
+                @include responsive(desktop) {
+                    margin-right: 2.5rem;
+                }
+            }
+        }
+        div:first-child {
+            display: flex;
+            @include responsive(desktop) {
+                width: 50%;
+                justify-content: space-between;
+            }
+            @include responsive(mini-desktop) {
+                margin-bottom: 4.8rem;
+                width: 100%;
+                max-width: 360px;
+            }
+        }
+    }
+    &__text-wrapper {
+        width: 100%;
+        max-width: 445px;
+        @include responsive(mini-desktop) {
+            width: 100%;
+            max-width: 573px;
+        }
+    }
+    h2 {
+        margin-bottom: 2.4rem;
+        @include responsive(phone) {
+            font-size: 3.6rem;
+        }
+    }
+    p {
+        color: $color-light-blue;
+    }
+}

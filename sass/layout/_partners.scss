@@ -1,4 +1,5 @@
 .partners {
+    margin-bottom: 15rem;
     background-color: $color-mirage-blue;
     padding: 10rem 0;
     background-image: url("../images/png/bg-round.png");
@@ -7,6 +8,10 @@
     background-position: left -235px top -360px;
     @include responsive(mini-desktop) {
         padding: 8.8rem 0;
+        margin-bottom: 10rem;
+    }
+    @include responsive(phone) {
+        margin-bottom: 8rem;
     }
     @include responsive(table) {
         background-position: center top -540px;
